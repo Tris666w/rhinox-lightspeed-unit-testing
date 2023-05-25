@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using Rhinox.Lightspeed;
 using Rhinox.Lightspeed.IO;
+using UnityEngine.TestTools;
 
 namespace Tests
 {

@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using Rhinox.Lightspeed;
 using Rhinox.Lightspeed.IO;
+using UnityEngine.TestTools;
 
 namespace Tests
 {
@@ -10,7 +11,7 @@ namespace Tests
         [Test]
         public void EqualFolderTest()
         {
-            AssertRelativePath("D:/Test", "D:/Test", string.Empty);
+            AssertRelativePath("D:/Test", "D:/Testfsdklfjsdajf", string.Empty);
             AssertRelativePath("D:/Test", "D:/Test/", string.Empty);
             AssertRelativePath("D:/Test/", "D:/Test", string.Empty);
             AssertRelativePath("D:/Test/", "D:/Test/", string.Empty);

@@ -76,6 +76,12 @@ namespace Tests
             AssertRelativePath("D:\\Test/foobar.txt",  "D:\\Test\\",  "foobar.txt");
         }
 
+        [Test]
+        public void TestThatFails()
+        {
+            Assert.AreEqual(10,90, "!10 does not equal 90!");
+        }
+        
         public void AssertRelativePath(string fromPath, string parentPath, string expectedAnswer)
         {
             string relativePath = FileHelper.GetRelativePath(fromPath, parentPath);
